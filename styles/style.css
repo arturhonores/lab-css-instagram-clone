@@ -7,4 +7,94 @@ light blue: #1c5380
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../images/bgtile.png");
+  position: relative;
+}
+
+.main {
+  max-width: 500px;
+  background-image: url("../images/frame.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  border-radius: 5%;
+}
+
+h1 {
+  max-width: 20rem;
+  color: #06365f;
+}
+
+.main-text {
+  min-width: 18rem;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+}
+
+.brand-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-container a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  gap: 10px;
+  background-color: #1c5380;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 5%;
+  border: 1px solid #06365f;
+}
+
+.brand-container a:hover {
+  filter: brightness(110%);
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1c5380;
+}
+
+.bg-white {
+  background-color: white;
+  height: 67vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.download-container {
+  display: flex;
+  gap: 20px;
+}
+
+footer {
+  display: flex;
+  gap: 10px;
+  padding-top: 3rem;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.footer-paragraph {
+  color: gray;
 }
